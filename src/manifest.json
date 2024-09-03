@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "amazon-list-sum",
+    "version": "1.0.0",
+    "description": "Amazonの欲しいものリストの合計金額を表示するChrome拡張機能",
+    "content_scripts": [
+        {
+            "matches": ["https://www.amazon.co.jp/hz/wishlist/ls/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
